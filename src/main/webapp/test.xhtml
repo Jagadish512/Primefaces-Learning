@@ -7,17 +7,22 @@
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
 
-    <h:head>
-        <title>PrimeFaces Test</title>
-        <h:outputScript name="test.js" />
-        <h:outputStylesheet name="test.css" />
-    </h:head>
-    <h:body>
+<h:head>
+    <title>Hello, World!</title>
+    <h:outputStylesheet library="webjars" name="primeflex/2.0.0/primeflex.min.css"/>
+</h:head>
+<h:body>
+    <h:form>
+        <div class="card">
+                <f:facet name="header">
+                    Simple Project
+                </f:facet>
 
-        <h1>#{testView.string}</h1>
-        <h:form id="frmTest">
-            
-        </h:form>
-
-    </h:body>
+                    <div class="field">
+                        <p:outputLabel for="username" styleClass="block">Username: </p:outputLabel>
+                        <p:inputText id="username" styleClass="block"/>
+                    </div>
+        </div>
+    </h:form>
+</h:body>
 </html>
